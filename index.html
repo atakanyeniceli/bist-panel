@@ -433,12 +433,55 @@
       </div>
     </div>
 
+    <!-- BÖLÜM 0.8: 6-9. UZMAN ALT AJANLAR (SUBAGENTS) KOMUTA MERKEZİ -->
+    <div class="bg-slate-900 rounded-xl border border-indigo-500/30 overflow-hidden">
+      <div class="p-4 border-b border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-2 bg-indigo-950/15">
+        <div>
+          <h2 class="font-semibold text-base text-indigo-300">🤖 6–9. Uzman Alt Ajanlar (Subagents) Komuta Merkezi</h2>
+          <p class="text-xs text-slate-400">Hisse alım komitesindeki 1–5. alt ajanlara ek olarak; Hazine/PPF Alfa Yarışı, Açık Pozisyon Çıkış Denetimi, Makro Takvim Kalkanı ve Veto İsabet Müfettişi ajanları.</p>
+        </div>
+        <span class="px-3 py-1 rounded-lg bg-slate-950 border border-indigo-500/40 text-xs font-mono text-indigo-300">
+          Toplam Aktif Uzman Alt Ajan: <strong>9 / 9</strong>
+        </span>
+      </div>
+      <div class="p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+        <div class="p-3.5 rounded-xl bg-slate-950/80 border border-teal-500/30 space-y-1">
+          <div class="text-xs font-bold text-teal-300">6. Hazine &amp; PPF Alfa Ajanı</div>
+          <div class="text-sm font-mono font-bold text-white">PPF'yi Yenen: 3 / 6 Hisse</div>
+          <div class="text-[11px] text-slate-400 font-mono">
+            Net TI1 Barajı: +%0.0805/gün (Yıllık Net: %34.13)
+          </div>
+        </div>
+        <div class="p-3.5 rounded-xl bg-slate-950/80 border border-emerald-500/30 space-y-1">
+          <div class="text-xs font-bold text-emerald-300">7. Açık Pozisyon &amp; Çıkış Ajanı</div>
+          <div class="text-sm font-mono font-bold text-white">🔒 Kâr Kilidi: 1 Hisse</div>
+          <div class="text-[11px] text-slate-400 font-mono">
+            Açık: 6 Pozisyon | Stop Yakını Uyarı: 0
+          </div>
+        </div>
+        <div class="p-3.5 rounded-xl bg-slate-950/80 border border-amber-500/30 space-y-1">
+          <div class="text-xs font-bold text-amber-300">8. Makro Takvim Kalkanı Ajanı</div>
+          <div class="text-xs font-bold text-white">🟢 Takvim Normal (Makro Şok Yok)</div>
+          <div class="text-[11px] text-slate-400 font-mono">
+            Sonraki: 🏦 TCMB PPK Faiz Kararı (Saat 14:00) (14 gün)
+          </div>
+        </div>
+        <div class="p-3.5 rounded-xl bg-slate-950/80 border border-rose-500/30 space-y-1">
+          <div class="text-xs font-bold text-rose-300">9. Veto İsabet Müfettişi</div>
+          <div class="text-sm font-mono font-bold text-white">Zarardan Korunan: 10 / 10</div>
+          <div class="text-[11px] text-slate-400 font-mono">
+            SMA50 Altı: 23 | Bıçak: 6 | Tavan/RSI: 1
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- BÖLÜM 1: ŞU AN PORTFÖYDE ELİMİZDE OLAN HİSSELER -->
     <div class="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden">
       <div class="p-4 border-b border-slate-800 flex items-center justify-between">
         <div>
-          <h2 class="font-semibold text-base text-white">💼 1. Şu An Portföyümüzde Bulunan Hisseler (Açık Pozisyonlar: 6)</h2>
-          <p class="text-xs text-slate-400">Ajan sadece 6 katmandan onay alan (Skor ≥ 75, Para Girişi Pozitif, Fiyat > VWAP ve Endeks Uygun) hisseleri satın alır.</p>
+          <h2 class="font-semibold text-base text-white">💼 1. Şu An Portföyümüzde Bulunan Hisseler (Açık Pozisyonlar: 6 — 6. ve 7. Alt Ajan Denetimli)</h2>
+          <p class="text-xs text-slate-400">Her açık pozisyon 6. Hazine/PPF Fırsat Maliyeti Ajanı ve 7. Dinamik Çıkış/Kâr Kilidi Ajanı tarafından 15 dakikada bir denetlenir.</p>
         </div>
       </div>
       
@@ -452,7 +495,8 @@
               <th class="p-3">Güncel Fiyat</th>
               <th class="p-3">Toplam Değer</th>
               <th class="p-3">Net K/Z</th>
-              <th class="p-3">Portföy Payı</th>
+              <th class="p-3">6. Ajan: Net PPF'ye Göre Alfa</th>
+              <th class="p-3">7. Ajan: Çıkış &amp; Kâr Kilidi</th>
               <th class="p-3">Dinamik ATR Stop</th>
               <th class="p-3">Dinamik ATR Kâr-Al</th>
             </tr>
@@ -466,11 +510,11 @@
                 <td class="p-3 font-mono font-bold text-white">292.5 ₺</td>
                 <td class="p-3 font-mono">6.727,5 ₺</td>
                 <td class="p-3 font-mono font-bold text-emerald-400">+7.9% (492.31 ₺)</td>
-                <td class="p-3 font-mono">%6.7</td>
+                <td class="p-3"><div class="font-semibold text-emerald-400">🟢 PPF Üstü Alfa</div><div class="text-[10px] text-slate-400 font-mono">PPF Farkı: +7.74% (+482.27 ₺)</div></td>
+                <td class="p-3"><div class="font-semibold text-teal-300">🔒 Kâr Kilidi Aktif (+%1.99 Garanti)</div><div class="text-[10px] text-slate-400">Stop (276.5 ₺) maliyetin (271.0952 ₺) üzerinde; sıfır zarar garantisiyle kâr sürüyor.</div></td>
                 <td class="p-3 font-mono text-rose-400">276.5 ₺</td>
                 <td class="p-3 font-mono text-emerald-400">312 ₺</td>
               </tr>
-            
               <tr class="hover:bg-slate-800/40">
                 <td class="p-3 font-bold text-white">GARAN <span class="text-slate-400 font-normal">(Finance)</span></td>
                 <td class="p-3 font-mono">45</td>
@@ -478,11 +522,11 @@
                 <td class="p-3 font-mono font-bold text-white">140.3 ₺</td>
                 <td class="p-3 font-mono">6.313,5 ₺</td>
                 <td class="p-3 font-mono font-bold text-emerald-400">+2.48% (152.98 ₺)</td>
-                <td class="p-3 font-mono">%6.3</td>
+                <td class="p-3"><div class="font-semibold text-emerald-400">🟢 PPF Üstü Alfa</div><div class="text-[10px] text-slate-400 font-mono">PPF Farkı: +2.4% (+148.02 ₺)</div></td>
+                <td class="p-3"><div class="font-semibold text-slate-200">🟢 Trend Sağlam (Tut)</div><div class="text-[10px] text-slate-400">Hedefe +%8.84 mesafe var, stop marjı -%7.91.</div></td>
                 <td class="p-3 font-mono text-rose-400">129.2 ₺</td>
                 <td class="p-3 font-mono text-emerald-400">152.7 ₺</td>
               </tr>
-            
               <tr class="hover:bg-slate-800/40">
                 <td class="p-3 font-bold text-white">YKBNK <span class="text-slate-400 font-normal">(Finance)</span></td>
                 <td class="p-3 font-mono">342</td>
@@ -490,11 +534,11 @@
                 <td class="p-3 font-mono font-bold text-white">36.82 ₺</td>
                 <td class="p-3 font-mono">12.592,44 ₺</td>
                 <td class="p-3 font-mono font-bold text-emerald-400">+0.33% (40.85 ₺)</td>
-                <td class="p-3 font-mono">%12.5</td>
+                <td class="p-3"><div class="font-semibold text-emerald-400">🟢 PPF Üstü Alfa</div><div class="text-[10px] text-slate-400 font-mono">PPF Farkı: +0.25% (+30.75 ₺)</div></td>
+                <td class="p-3"><div class="font-semibold text-slate-200">🟢 Trend Sağlam (Tut)</div><div class="text-[10px] text-slate-400">Hedefe +%13.25 mesafe var, stop marjı -%8.58.</div></td>
                 <td class="p-3 font-mono text-rose-400">33.66 ₺</td>
                 <td class="p-3 font-mono text-emerald-400">41.7 ₺</td>
               </tr>
-            
               <tr class="hover:bg-slate-800/40">
                 <td class="p-3 font-bold text-white">TCELL <span class="text-slate-400 font-normal">(Communications)</span></td>
                 <td class="p-3 font-mono">133</td>
@@ -502,11 +546,11 @@
                 <td class="p-3 font-mono font-bold text-white">93.9 ₺</td>
                 <td class="p-3 font-mono">12.488,7 ₺</td>
                 <td class="p-3 font-mono font-bold text-rose-400">-0.59% (-74.13 ₺)</td>
-                <td class="p-3 font-mono">%12.4</td>
+                <td class="p-3"><div class="font-semibold text-amber-300">🔵 Yeni Pozisyon (İzleniyor)</div><div class="text-[10px] text-slate-400 font-mono">PPF Farkı: -0.67% (-84.24 ₺)</div></td>
+                <td class="p-3"><div class="font-semibold text-slate-200">🟢 Trend Sağlam (Tut)</div><div class="text-[10px] text-slate-400">Hedefe +%11.82 mesafe var, stop marjı -%6.34.</div></td>
                 <td class="p-3 font-mono text-rose-400">87.95 ₺</td>
                 <td class="p-3 font-mono text-emerald-400">105 ₺</td>
               </tr>
-            
               <tr class="hover:bg-slate-800/40">
                 <td class="p-3 font-bold text-white">ALARK <span class="text-slate-400 font-normal">(Finance)</span></td>
                 <td class="p-3 font-mono">123</td>
@@ -514,11 +558,11 @@
                 <td class="p-3 font-mono font-bold text-white">101.4 ₺</td>
                 <td class="p-3 font-mono">12.472,2 ₺</td>
                 <td class="p-3 font-mono font-bold text-rose-400">-0.51% (-64.42 ₺)</td>
-                <td class="p-3 font-mono">%12.4</td>
+                <td class="p-3"><div class="font-semibold text-amber-300">🔵 Yeni Pozisyon (İzleniyor)</div><div class="text-[10px] text-slate-400 font-mono">PPF Farkı: -0.59% (-74.51 ₺)</div></td>
+                <td class="p-3"><div class="font-semibold text-slate-200">🟢 Trend Sağlam (Tut)</div><div class="text-[10px] text-slate-400">Hedefe +%14.89 mesafe var, stop marjı -%8.28.</div></td>
                 <td class="p-3 font-mono text-rose-400">93 ₺</td>
                 <td class="p-3 font-mono text-emerald-400">116.5 ₺</td>
               </tr>
-            
               <tr class="hover:bg-slate-800/40">
                 <td class="p-3 font-bold text-white">ENJSA <span class="text-slate-400 font-normal">(Utilities)</span></td>
                 <td class="p-3 font-mono">103</td>
@@ -526,11 +570,11 @@
                 <td class="p-3 font-mono font-bold text-white">120.1 ₺</td>
                 <td class="p-3 font-mono">12.370,3 ₺</td>
                 <td class="p-3 font-mono font-bold text-rose-400">-1.04% (-130.44 ₺)</td>
-                <td class="p-3 font-mono">%12.3</td>
+                <td class="p-3"><div class="font-semibold text-amber-300">🔵 Yeni Pozisyon (İzleniyor)</div><div class="text-[10px] text-slate-400 font-mono">PPF Farkı: -1.12% (-140.5 ₺)</div></td>
+                <td class="p-3"><div class="font-semibold text-slate-200">🟢 Trend Sağlam (Tut)</div><div class="text-[10px] text-slate-400">Hedefe +%14.74 mesafe var, stop marjı -%7.33.</div></td>
                 <td class="p-3 font-mono text-rose-400">111.3 ₺</td>
                 <td class="p-3 font-mono text-emerald-400">137.8 ₺</td>
               </tr>
-            
           </tbody>
         </table>
       </div>

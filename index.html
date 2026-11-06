@@ -14,6 +14,22 @@
 <body class="bg-slate-950 text-slate-100 p-3 md:p-6 min-h-screen">
   <div class="w-full max-w-[98%] 2xl:max-w-[1880px] mx-auto space-y-6">
 
+    <!-- PORTFÖY MODU GEÇİŞ BARI (DUAL DASHBOARD SWITCHER) -->
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 bg-slate-900/95 border border-emerald-500/30 px-4 py-3 rounded-2xl shadow-lg">
+      <div class="flex items-center gap-2.5 text-xs">
+        <span class="px-2.5 py-1 rounded-full bg-emerald-600 text-white font-bold tracking-wide uppercase">🛡️ KURUMSAL / DENGELİ MOD</span>
+        <span class="text-slate-300">Şu an <strong>Dengeli &amp; Korumalı Kurumsal Portföy</strong> panelindesiniz (<code>dashboard.html</code>).</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="dashboard.html" class="px-3.5 py-1.5 rounded-xl bg-emerald-600 text-white text-xs font-bold shadow border border-emerald-400/50 flex items-center gap-1.5">
+          🛡️ Dengeli / Kurumsal Portföy (Aktif)
+        </a>
+        <a href="dashboard_riskli.html" class="px-3.5 py-1.5 rounded-xl bg-slate-950 hover:bg-rose-950/80 text-amber-300 border border-rose-500/50 text-xs font-bold transition flex items-center gap-1.5">
+          🔥 Agresif / Yüksek Riskli Portföy'e Geç (dashboard_riskli.html)
+        </a>
+      </div>
+    </div>
+
     <!-- ÜST BAŞLIK -->
     <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-slate-800 pb-5 gap-4">
       <div>
@@ -29,7 +45,7 @@
       </div>
       <div class="text-xs bg-slate-900 border border-slate-800 px-4 py-2.5 rounded-xl space-y-1">
         <div>Veri Modu: <span class="text-blue-400 font-semibold">FREE_SCANNER_HYBRID_15M_DELAY</span></div>
-        <div>Son Güncelleme: <span class="text-white font-mono">06.11.2026 01:08:35</span></div>
+        <div>Son Güncelleme: <span class="text-white font-mono">06.11.2026 05:50:32</span></div>
       </div>
     </div>
 
@@ -46,7 +62,7 @@
         </div>
         
         <div class="text-xs font-mono bg-slate-950 px-3 py-1.5 rounded-lg border border-amber-500/30 text-amber-300">
-          🌍 USD/TRY: <strong>50.09 ₺</strong> (+0.1%) | XU030 Makası: -0.34%
+          🌍 USD/TRY: <strong>50.15 ₺</strong> (+0.22%) | XU030 Makası: -0.34%
         </div>
       </div>
     </div>
@@ -1126,11 +1142,60 @@
                 <td class="px-2.5 py-2.5 text-xs text-slate-300 whitespace-normal min-w-[200px] max-w-sm">🛑 VETO_MARKET_BEAR: BIST 100 endeksi genel satış modunda, yeni alımlar donduruldu.</td>
               </tr>
               <tr class="hover:bg-slate-800/40 stock-row whitespace-nowrap"
+                  data-ticker="sahol"
+                  data-sector="finance"
+                  data-poscmf="0"
+                  data-buy="0">
+                <td class="px-2.5 py-2.5 font-mono text-slate-500">14</td>
+                <td class="px-2.5 py-2.5">
+                  <div class="font-bold text-white font-mono text-sm">SAHOL</div>
+                  <div class="text-[11px] text-slate-400">Finance</div>
+                </td>
+                <td class="px-2.5 py-2.5 text-right font-mono font-semibold text-white">85.1 ₺</td>
+                <td class="px-2.5 py-2.5 text-right font-mono font-semibold text-rose-400">-1.28%</td>
+                <td class="px-2.5 py-2.5 text-center">
+                  <span class="font-mono font-bold text-sm text-amber-400">53</span><span class="text-slate-500">/100</span>
+                </td>
+                <td class="px-2.5 py-2.5">
+                  <span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-slate-800 text-slate-300 border border-slate-700">BEKLE / İZLE</span>
+                </td>
+                <td class="px-2.5 py-2.5">
+                  <div class="text-[11px] font-semibold text-slate-200 mb-0.5">🛑 VETO (3/5 Onay)</div>
+                  <div class="flex flex-wrap gap-1">
+                    <span class="px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-[10px] text-slate-300">🟡 Lot: Dengeli</span><span class="px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-[10px] text-slate-300">🟢 Trend: Onay</span><span class="px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-[10px] text-slate-300">🟢 Makro (XHOLD)</span><span class="px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-[10px] text-slate-300">🟢 Bilanço/KAP: Onay</span><span class="px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-[10px] text-slate-300">🛑 Risk: Veto</span>
+                  </div>
+                </td>
+                <td class="px-2.5 py-2.5 min-w-[145px]">
+                  <div class="flex justify-between text-[11px] font-mono mb-1">
+                    <span class="text-emerald-400 font-semibold">Al: %49</span>
+                    <span class="text-rose-400 font-semibold">Sat: %51</span>
+                  </div>
+                  <div class="w-full h-1.5 bg-rose-500/40 rounded-full overflow-hidden flex">
+                    <div class="bg-emerald-400 h-full" style="width: 49%"></div>
+                  </div>
+                  <div class="text-[11px] font-mono mt-1 text-rose-300">Net: -4.876 Lot</div>
+                </td>
+                <td class="px-2.5 py-2.5 text-right font-mono font-semibold text-rose-400">
+                  -24,8 M₺
+                  <div class="text-[10px] font-normal text-slate-400">Hacim: 2.48 Mr₺</div>
+                </td>
+                <td class="px-2.5 py-2.5 text-right font-mono font-semibold text-rose-400">
+                  -0.012
+                </td>
+                <td class="px-2.5 py-2.5 text-right font-mono">43.6</td>
+                <td class="px-2.5 py-2.5 text-right font-mono text-emerald-400 font-semibold">+14.58%</td>
+                <td class="px-2.5 py-2.5 text-right font-mono text-slate-300">0.94x</td>
+                <td class="px-2.5 py-2.5 text-right font-mono text-slate-300">29.122.006</td>
+                <td class="px-2.5 py-2.5 text-right font-mono text-slate-400">85.71 ₺</td>
+                <td class="px-2.5 py-2.5 text-right font-mono text-rose-400">78.15 ₺</td>
+                <td class="px-2.5 py-2.5 text-xs text-slate-300 whitespace-normal min-w-[200px] max-w-sm">🛑 VETO_DOWNTREND: Fiyat (85.1 TL), 50 günlük ana trend ortalamasının (88.64 TL) altında.</td>
+              </tr>
+              <tr class="hover:bg-slate-800/40 stock-row whitespace-nowrap"
                   data-ticker="tavhl"
                   data-sector="transportation"
                   data-poscmf="0"
                   data-buy="0">
-                <td class="px-2.5 py-2.5 font-mono text-slate-500">14</td>
+                <td class="px-2.5 py-2.5 font-mono text-slate-500">15</td>
                 <td class="px-2.5 py-2.5">
                   <div class="font-bold text-white font-mono text-sm">TAVHL</div>
                   <div class="text-[11px] text-slate-400">Transportation</div>
@@ -1179,7 +1244,7 @@
                   data-sector="consumer non-durables"
                   data-poscmf="1"
                   data-buy="0">
-                <td class="px-2.5 py-2.5 font-mono text-slate-500">15</td>
+                <td class="px-2.5 py-2.5 font-mono text-slate-500">16</td>
                 <td class="px-2.5 py-2.5">
                   <div class="font-bold text-white font-mono text-sm">ULKER</div>
                   <div class="text-[11px] text-slate-400">Consumer Non-Durables</div>
@@ -1228,7 +1293,7 @@
                   data-sector="retail trade"
                   data-poscmf="1"
                   data-buy="0">
-                <td class="px-2.5 py-2.5 font-mono text-slate-500">16</td>
+                <td class="px-2.5 py-2.5 font-mono text-slate-500">17</td>
                 <td class="px-2.5 py-2.5">
                   <div class="font-bold text-white font-mono text-sm">SOKM</div>
                   <div class="text-[11px] text-slate-400">Retail Trade</div>
@@ -1277,7 +1342,7 @@
                   data-sector="utilities"
                   data-poscmf="1"
                   data-buy="0">
-                <td class="px-2.5 py-2.5 font-mono text-slate-500">17</td>
+                <td class="px-2.5 py-2.5 font-mono text-slate-500">18</td>
                 <td class="px-2.5 py-2.5">
                   <div class="font-bold text-white font-mono text-sm">AKSEN</div>
                   <div class="text-[11px] text-slate-400">Utilities</div>
@@ -1326,7 +1391,7 @@
                   data-sector="retail trade"
                   data-poscmf="1"
                   data-buy="0">
-                <td class="px-2.5 py-2.5 font-mono text-slate-500">18</td>
+                <td class="px-2.5 py-2.5 font-mono text-slate-500">19</td>
                 <td class="px-2.5 py-2.5">
                   <div class="font-bold text-white font-mono text-sm">MGROS</div>
                   <div class="text-[11px] text-slate-400">Retail Trade</div>
@@ -1369,55 +1434,6 @@
                 <td class="px-2.5 py-2.5 text-right font-mono text-slate-400">453.05 ₺</td>
                 <td class="px-2.5 py-2.5 text-right font-mono text-rose-400">419.25 ₺</td>
                 <td class="px-2.5 py-2.5 text-xs text-slate-300 whitespace-normal min-w-[200px] max-w-sm">🛑 VETO_DOWNTREND: Fiyat (452.5 TL), 50 günlük ana trend ortalamasının (498.39 TL) altında.</td>
-              </tr>
-              <tr class="hover:bg-slate-800/40 stock-row whitespace-nowrap"
-                  data-ticker="sahol"
-                  data-sector="finance"
-                  data-poscmf="0"
-                  data-buy="0">
-                <td class="px-2.5 py-2.5 font-mono text-slate-500">19</td>
-                <td class="px-2.5 py-2.5">
-                  <div class="font-bold text-white font-mono text-sm">SAHOL</div>
-                  <div class="text-[11px] text-slate-400">Finance</div>
-                </td>
-                <td class="px-2.5 py-2.5 text-right font-mono font-semibold text-white">85.1 ₺</td>
-                <td class="px-2.5 py-2.5 text-right font-mono font-semibold text-rose-400">-1.28%</td>
-                <td class="px-2.5 py-2.5 text-center">
-                  <span class="font-mono font-bold text-sm text-rose-400">49</span><span class="text-slate-500">/100</span>
-                </td>
-                <td class="px-2.5 py-2.5">
-                  <span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-slate-800 text-slate-300 border border-slate-700">BEKLE / İZLE</span>
-                </td>
-                <td class="px-2.5 py-2.5">
-                  <div class="text-[11px] font-semibold text-slate-200 mb-0.5">🛑 VETO (3/5 Onay)</div>
-                  <div class="flex flex-wrap gap-1">
-                    <span class="px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-[10px] text-slate-300">🔴 Lot: Çıkış</span><span class="px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-[10px] text-slate-300">🟢 Trend: Onay</span><span class="px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-[10px] text-slate-300">🟢 Makro (XHOLD)</span><span class="px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-[10px] text-slate-300">🟢 Bilanço/KAP: Onay</span><span class="px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-[10px] text-slate-300">🛑 Risk: Veto</span>
-                  </div>
-                </td>
-                <td class="px-2.5 py-2.5 min-w-[145px]">
-                  <div class="flex justify-between text-[11px] font-mono mb-1">
-                    <span class="text-emerald-400 font-semibold">Al: %48</span>
-                    <span class="text-rose-400 font-semibold">Sat: %52</span>
-                  </div>
-                  <div class="w-full h-1.5 bg-rose-500/40 rounded-full overflow-hidden flex">
-                    <div class="bg-emerald-400 h-full" style="width: 48%"></div>
-                  </div>
-                  <div class="text-[11px] font-mono mt-1 text-rose-300">Net: -14.222 Lot</div>
-                </td>
-                <td class="px-2.5 py-2.5 text-right font-mono font-semibold text-rose-400">
-                  -24,8 M₺
-                  <div class="text-[10px] font-normal text-slate-400">Hacim: 2.48 Mr₺</div>
-                </td>
-                <td class="px-2.5 py-2.5 text-right font-mono font-semibold text-rose-400">
-                  -0.035
-                </td>
-                <td class="px-2.5 py-2.5 text-right font-mono">42.3</td>
-                <td class="px-2.5 py-2.5 text-right font-mono text-emerald-400 font-semibold">+14.58%</td>
-                <td class="px-2.5 py-2.5 text-right font-mono text-slate-300">0.95x</td>
-                <td class="px-2.5 py-2.5 text-right font-mono text-slate-300">29.122.006</td>
-                <td class="px-2.5 py-2.5 text-right font-mono text-slate-400">85.7 ₺</td>
-                <td class="px-2.5 py-2.5 text-right font-mono text-rose-400">78.15 ₺</td>
-                <td class="px-2.5 py-2.5 text-xs text-slate-300 whitespace-normal min-w-[200px] max-w-sm">🛑 VETO_DOWNTREND: Fiyat (85.1 TL), 50 günlük ana trend ortalamasının (88.64 TL) altında.</td>
               </tr>
               <tr class="hover:bg-slate-800/40 stock-row whitespace-nowrap"
                   data-ticker="sise"
